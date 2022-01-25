@@ -1,4 +1,6 @@
-# Myportfolio
+My website (under construction). I used Angular, HTML and CSS.
+
+# Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
