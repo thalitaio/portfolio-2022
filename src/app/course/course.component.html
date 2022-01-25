@@ -1,0 +1,17 @@
+<section class="course">
+  <div class="container">
+    <h5 class="text-center">Indicação de cursos que fazem a diferença. <br>Selecionei alguns pagos e outros gratuitos. Aproveite e se lembre: <br>Amanhã você vai desejar ter começado hoje.</h5>
+
+    <div class="row mt-5">
+      <div class="col-lg-3 mb-5" *ngFor="let cs of course">
+        <div class="box shadow">
+          <img src="{{cs.image}}" alt="imagem do curso" width="100%">
+          <h4 class="mt-2">{{cs.name}}</h4>
+          <p class="mt-2">{{cs.description}}</p>
+          <button class="btn btn-secondary btn-md ">Assistir</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
