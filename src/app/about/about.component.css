@@ -12,9 +12,118 @@
   font-size: 17px;
 }
 
+.img-fluid
+{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
+}
+
+.my-card
+{
+    text-align: center;
+}
+
+/* cards portfolio*/
+
+.projetos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-port {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
+
+.card-port-img-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: .5rem;
+}
+
+.card-port-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  opacity: .8;
+  transition: opacity .3s;
+}
+
+.card-port:hover .card-port-img-wrapper img {
+  opacity: .5;
+}
+
+.card-port-info {
+  opacity: 0;
+  visibility: hidden;
+  width: 20rem;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-shadow: 0.3 0.2rem 0.3rem rgba(0, 0, 0, .6);
+  transition: all 0.3s;
+}
+
+.card-port-info h2 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 500;
+  color:rgb(238, 238, 238);
+}
+
+.card-port-info h3 {
+  font-family: var(--font-secondary);
+  color: #605C3C;
+  margin-bottom: 1.5rem;
+}
+
+.card-port-info p {
+  width: 80%;
+  color: #eee;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #3C3B3F;
+  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
+  background: linear-gradient(to right, #605C3C, #3C3B3F);
+  font-family: var(--font-action);
+  color: #eee;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card-port-info button {
+  width: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.card-port:hover .card-port-info {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
 @media screen and (max-width:600px)
 {
   .follow a{
     padding: 5px;
+  }
+
+  .conhecimentos {
+
   }
 }
