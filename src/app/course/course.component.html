@@ -1,18 +1,18 @@
-<section class="course">
-  <div class="container">
-    <h5 class="text-center">Indicação de cursos que fazem a diferença. <br>Selecionei alguns pagos e outros gratuitos. Aproveite e se lembre: <br>Amanhã você vai desejar ter começado hoje.</h5>
 
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col-lg-3 mb-5" *ngFor="let cs of course">
-          <div class="box shadow">
-            <img src="{{cs.image}}" alt="imagem do curso" width="100%">
-            <h4 class="mt-2">{{cs.name}}</h4>
-            <p class="mt-2">{{cs.description}}</p>
-            <a href="{{cs.href}}" class="btn btn-secondary btn-md" target="_blank"> Assistir</a>
-          </div>
-        </div>
-      </div>
-    </div>
+ <div class="text-center">
+      <h1>Cursos e Livros</h1>
+      <h6 class="m-5">Alguns cursos e livros sobre programação, selecionados por mim para quem deseja aprender a programar. <br> Lembre-se: em um ano, você vai desejar ter começado hoje.</h6>
   </div>
-</section>
+
+
+      <div class="cards row" *ngFor="let cs of course">
+          <div class="card card-1">
+            <h2 class="card__title">{{cs.name}}</h2>
+
+            <p class="card__apply">
+              <a class="card__link" href={{cs.href}} target="_blank">Assista Agora</a>
+            </p>
+          </div>
+      </div>
+
+
