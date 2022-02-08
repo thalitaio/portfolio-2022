@@ -58,7 +58,7 @@
 }
 
 .card-port:hover .card-port-img-wrapper img {
-  opacity: .5;
+  opacity: .3;
 }
 
 .card-port-info {
@@ -81,7 +81,7 @@
 
 .card-port-info h3 {
   font-family: var(--font-secondary);
-  color: #605C3C;
+  color: #bfade0;
   margin-bottom: 1.5rem;
 }
 
@@ -94,8 +94,8 @@
 
 .btn {
   background: #3C3B3F;
-  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
-  background: linear-gradient(to right, #605C3C, #3C3B3F);
+  background: -webkit-linear-gradient(to right, #bfade0, #3C3B3F);
+  background: linear-gradient(to right, #bfade0, #3C3B3F);
   font-family: var(--font-action);
   color: #eee;
   border-radius: .5rem;
